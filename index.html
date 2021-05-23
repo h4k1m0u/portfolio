@@ -8,7 +8,7 @@ title: Home page title
   <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
   </head>
   <body>
     <h1>Home page</h1>
@@ -16,7 +16,7 @@ title: Home page title
     {{ page.my_var }}
 
     {% for post in site.posts %}
-      <a href={{ post.url }}>{{ post.title }}</a>
+      <a href={{ site.baseurl }}{{ post.url }}>{{ post.title }}</a>
     {% endfor %}
   </body>
 </html>
