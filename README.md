@@ -55,6 +55,17 @@ $ bundler exec jekyll build --baseurl /portfolio
 [github-deployment]: https://github.com/h4k1m0u/snake/tree/master/client#deployment-on-github
 
 
+# Directory structure
+See [Jekyll directory structure][directory-structure]:
+- **_sass:** partials imported from main css file `assets/css/main.scss` (see [Example sass][example-sass])
+- **_posts:** Blog posts
+- **_layouts:** Templates (html or markdown) for any page
+- **_site:** Generated website
+
+[directory-structure]: https://jekyllrb.com/docs/structure/
+[example-sass]: https://github.com/jekyll/jekyll-sass-converter/tree/master/docs
+
+
 # Resources
 - [Step-by-step tutorial][tutorial].
 
