@@ -34,20 +34,22 @@ projects:
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
   </head>
   <body>
-    <h1>Projects</h1>
-    <ul>
-      {% for project in page.projects %}
-        <li>
-          <a href="{{ project.repo }}">
-            {{ project.name }}
-          </a> :
-          <span>{{ project.env }}</span>
-        </li>
-      {% endfor %}
-    </ul>
+    <main>
+      <h1>Projects</h1>
+      <ul>
+        {% for project in page.projects %}
+          <li>
+            <a href="{{ project.repo }}">
+              {{ project.name }}
+            </a> :
+            <span>{{ project.env }}</span>
+          </li>
+        {% endfor %}
+      </ul>
 
-    {% for post in site.posts %}
-      <a href={{ site.baseurl }}{{ post.url }}>{{ post.title }}</a>
-    {% endfor %}
+      {% for post in site.posts %}
+        <a href={{ site.baseurl }}{{ post.url }}>{{ post.title }}</a>
+      {% endfor %}
+    </main>
   </body>
 </html>
