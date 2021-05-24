@@ -1,0 +1,31 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: $background-color;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  color: $primary-dark-color;
+}
+
+ul {
+  list-style: none;
+
+  & > li {
+    margin-top: 1em;
+
+    &::before {
+      content: "\2022";
+      color: $secondary-color;
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $primary-color;
+
+  &:hover {
+    color: $primary-light-color;
+  }
+}

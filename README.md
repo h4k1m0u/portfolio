@@ -78,3 +78,9 @@ Websites made with Jekyll:
 - [Clangd website][clangd-website]
 
 [clangd-website]: https://github.com/llvm/clangd-www/
+
+
+# Credit
+- [Color palette][color-palette]
+
+[color-palette]: https://www.colourlovers.com/palette/27905/threadless 
