@@ -1,7 +1,30 @@
 ---
 # front matter in yaml
-my_var: 10
-title: Home page title
+projects:
+  - name: First Person Shooter
+    repo: https://github.com/h4k1m0u/first-person-shooter
+    env:  C++, OpenGL
+  - name: SDL game
+    repo: https://github.com/h4k1m0u/sdl-game
+    env:  C++, SDL
+  - name: Snake
+    repo: https://github.com/h4k1m0u/snake
+    env:  JS, Node.js, P5.js, Socket.io
+  - name: Adventure
+    repo: https://github.com/h4k1m0u/adventure
+    env:  JS, Three.js
+  - name: Pinball
+    repo: https://github.com/h4k1m0u/pinball
+    env:  JS, P5.js, Planck.js
+  - name: Platformer
+    repo: https://github.com/h4k1m0u/platformer
+    env:  JS, P5.js, Phaser
+  - name: Full-stack webapp
+    repo: https://github.com/h4k1m0u/fullstack-webapp
+    env:  JS, Node.js, Express.js, MongoDB, Mongoose, React
+  - name: Portfolio
+    repo: https://github.com/h4k1m0u/portfolio
+    env:  Jekyll
 ---
 <!DOCTYPE html>
 <html>
@@ -11,9 +34,17 @@ title: Home page title
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
   </head>
   <body>
-    <h1>Home page</h1>
-    {{ "Hello World!" | downcase }}
-    {{ page.my_var }}
+    <h1>Projects</h1>
+    <ul>
+      {% for project in page.projects %}
+        <li>
+          <a href="{{ project.repo }}">
+            {{ project.name }}
+          </a> :
+          <span>{{ project.env }}</span>
+        </li>
+      {% endfor %}
+    </ul>
 
     {% for post in site.posts %}
       <a href={{ site.baseurl }}{{ post.url }}>{{ post.title }}</a>
