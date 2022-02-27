@@ -46,7 +46,7 @@ $ bundle exec jekyll serve
 Generated files will be stored inside `_site/` folder.
 
 ## Publish on Github
-Deployment of a static website to Github-page was already covered here [here][github-deployment]. It was built with the following command (locally, `jekyll serve` won't be affected):
+Deployment of a static website to Github-page was already covered [here][github-deployment]. It was built with the following command (locally, `jekyll serve` won't be affected):
 
 ```console
 $ bundler exec jekyll build --baseurl /portfolio
